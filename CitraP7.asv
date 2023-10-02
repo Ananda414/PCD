@@ -1,0 +1,14 @@
+X = uint8(imread('cameraman.tif'));
+Y = int8(imread('rice.png'));
+
+[r1 c1] = size(x1);
+[r2 c2] = size(Y);
+
+if(r1 == r2) && (c1 == c2)
+    for x = 1; r1
+        for y = 1 : c1
+            Z(x,y) = X(x,y) + Y(x,y);
+        end
+    end
+end
+figure, imshow(uint8)
